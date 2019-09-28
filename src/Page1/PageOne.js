@@ -8,21 +8,22 @@ class Page1 extends Component {
      this.state = {
        texts: [
         {
-          text1: ["I`m Noga"], 
+          text1: ["I`m Amir Metsu"], 
           class1: "mainTitle", 
-          text2: ["A frontend developer and designer"], 
-          class2: "subTitle"
+          text2: ["3D Artist, Animator"], 
+          class2: "subTitle",
+          text3:["I can animate , create assets, model, sculpt and paint characters. I can also manage projects and create all kinds of 3D contant according to costumer's need"]
         },
         {
-          text1: ["and... I am also"], 
+          text1: ["I can animate , create assets, model, sculpt and paint characters. I can also manage projects and create all kinds of 3D contant according to costumer's need"], 
           class1: "subTitle", 
-          text2: ["Devoted", "Creative", "Fest learner", "And product oriented"], 
+          text2: ["3D Artist", "Animator", "Project Manager", "And a 3D Gerenalist"], 
           class2:"arrayTitles"
         },
         {
-          text1: ["I use: HTML, CSS, Sass, Javascript, React, Redux, VueJs, NodeJs, MongoDB, Git, VScode"], 
+          text1: ["I mainly use: Autodesk Maya, Zbrush, PhotoShop, Plotaverse, Premiere"        ], 
           class1: "subTitle", 
-          text2: ["And somtimes I also use: MySql, Centos7, Vim, PHP, Wordpress, twig, Idiorm, JQuery and more ..."], 
+          text2: ["And somtimes I also use: substance painter, After Effect, Lightwave, 3DS Max and more... "], 
           class2:"subTitle"
         }
        ],
@@ -64,12 +65,13 @@ class Page1 extends Component {
                 secondTextClassName={this.state.texts[this.state.paragraphIndex].class2}
                 text1={this.state.texts[this.state.paragraphIndex].text1}
                 text2={this.state.texts[this.state.paragraphIndex].text2}
+                text3={this.state.texts[this.state.paragraphIndex].text3}
                 speed1={100}
                 speed2={100}
                 doneTyping={this.onDoneParagraphTyping}
                 clearTyping={this.state.clearTyping}
               />
-            </div>
+            </div> 
           </div>
         : <div className="static-paragraph">
             <h1 className="noga">{this.state.texts[0].text1}</h1>
@@ -79,7 +81,7 @@ class Page1 extends Component {
             <p className="noga-description"><b>Development tools: </b> vim,  VScode, git, centos 7</p>
           </div>
       }
-   
+   <iframe src="https://player.vimeo.com/video/235837646" width="800" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
   );
   }

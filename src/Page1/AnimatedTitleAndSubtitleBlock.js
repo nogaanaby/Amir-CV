@@ -25,7 +25,7 @@ class AnimatedTitleAndSubtitleBlock extends Component {
 
   componentDidUpdate(prevProps,prevState){
     if(this.props.text1 !== prevProps.text1){
-        this.setState({onTyping: 1})
+        //this.setState({onTyping: 1})
     }
   }
 
@@ -33,10 +33,10 @@ class AnimatedTitleAndSubtitleBlock extends Component {
   }
 
   onDoneWordTyping = (num) => {
-    if(this.state.onTyping < 2){
+    if(this.state.onTyping < 3){
       this.setState({onTyping: this.state.onTyping + 1})
     } else  {
-      if(num === 2){
+      if(num === 3){
         console.log("AnimatedTitleAndSubtitleBlock sends done typing")
         this.props.doneTyping()
       }
@@ -60,6 +60,12 @@ class AnimatedTitleAndSubtitleBlock extends Component {
         speed={this.props.speed2}
         startTyping={this.state.onTyping === 2}
         doneTyping={() => this.onDoneWordTyping(2)}/>
+                <AnimatedTyping
+        className={this.props.secondTextClassName}
+        text={this.props.text3}
+        speed={this.props.speed2}
+        startTyping={this.state.onTyping === 3}
+        doneTyping={() => this.onDoneWordTyping(3)}/>
     </div>
   );
   }

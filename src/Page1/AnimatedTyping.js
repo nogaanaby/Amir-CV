@@ -40,7 +40,7 @@ class AnimatedTyping extends Component {
         this.typingText();
     }
     if(this.props.text !== prevProps.text){
-      this.setState({typing: ""})
+      //this.setState({typing: ""})
     }
   }
 

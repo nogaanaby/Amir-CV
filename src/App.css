@@ -7,10 +7,10 @@
 
 .App {
   text-align: center;
-  color: black;
+  color: white;
   /* background-size: cover;
   background-image:url("./assets/sunset-switzerland.png"); */
-  background-color: #E0EBE8;
+  background-color: #1a1a1a;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -21,9 +21,10 @@
 }
 
 .App-header {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   background-repeat: no-repeat;
@@ -111,7 +112,7 @@
   /*********** desktop  **********/
   @media only screen and (min-width: 800px) {
     .App-header{
-      background-image: url('./assets/switzerland-with-the-sun-low.png');
+
     }
     .windmill-vector{
       max-width: 100px;
@@ -126,7 +127,7 @@
 /*********** mobile  **********/
   @media only screen and (max-width: 800px) {
     .App-header{
-      background-image: url('./assets/switzerland-mobile.png');
+
     }
     .windmill-vector{
       max-width: 50px;

@@ -68,10 +68,7 @@ class App extends Component {
             flipPage={this.flipPage}
             showErrows={this.state.showErrows}/>
 
-      <div className="windmill-container">
-        <img className="windmill-vector" src={windmill} />
-        <img className="windmill-spin" src={windmillSpin} />
-      </div>    
+     
       </header>
     </div>
   );
