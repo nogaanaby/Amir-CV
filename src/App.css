@@ -40,101 +40,120 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.underline{
+.underline {
   animation: blink infinite 1s linear;
 }
 
 @keyframes blink {
-  0%   {color:#E0EBE8; }
-  49%   {color:#E0EBE8; }
-  50%  {color:black; }
-  100%  {color:black; }
+  0% {
+    color: #E0EBE8;
   }
 
-  .Pagination{
-    width: 99vw;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
+  49% {
+    color: #E0EBE8;
   }
 
-  .pagination-arrow{
-    color: #9EC6C0;
-  }
-  .pagination-arrow-a{
-    margin: 7%;
-    position: absolute;
-    bottom: 0;
-    border: none;
-    background: none;
-  }
-  .pagination-arrow-a:focus{
-    outline: none;
-    border: none;
-  }
-  .pagination-arrow-a-right{
-    right: 0;
-  }
-  .pagination-arrow-a-left{
-    left: 0;
+  50% {
+    color: #1a1a1a;
   }
 
-  .sun{
-    width: 14%;
-    position: absolute;
+  100% {
+    color: #1a1a1a;
+  }
+}
+
+.Pagination {
+  width: 99vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.pagination-arrow {
+  color: #9EC6C0;
+}
+
+.pagination-arrow-a {
+  margin: 7%;
+  position: absolute;
+  bottom: 0;
+  border: none;
+  background: none;
+}
+
+.pagination-arrow-a:focus {
+  outline: none;
+  border: none;
+}
+
+.pagination-arrow-a-right {
+  right: 0;
+}
+
+.pagination-arrow-a-left {
+  left: 0;
+}
+
+.sun {
+  width: 14%;
+  position: absolute;
+}
+
+.cloude {
+  width: 10%;
+  position: absolute;
+}
+
+.windmill-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.windmill-vector {
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.windmill-spin {
+  position: absolute;
+  z-index: 1;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+/*********** desktop  **********/
+@media only screen and (min-width: 801px) {
+  .App-header {}
+
+  .windmill-vector {
+    max-width: 100px;
+    left: 77px;
   }
 
-  .cloude{
-    width: 10%;
-    position: absolute;
+  .windmill-spin {
+    max-width: 250px;
+    bottom: 54px;
   }
-
-  .windmill-container{
-    position: absolute;
-    bottom: 0;
-  }
-  .windmill-vector{
-    bottom: 0;
-    position: absolute;
-    z-index: 0;
-  }
-  .windmill-spin{
-    position: absolute;
-    z-index: 1;
-    animation: App-logo-spin infinite 20s linear;
-  }
-  /*********** desktop  **********/
-  @media only screen and (min-width: 800px) {
-    .App-header{
-
-    }
-    .windmill-vector{
-      max-width: 100px;
-      left: 77px;
-    }
-    .windmill-spin{
-      max-width: 250px;
-      bottom: 54px;
-    }
-  }
+}
 
 /*********** mobile  **********/
-  @media only screen and (max-width: 800px) {
-    .App-header{
+@media only screen and (max-width: 800px) {
+  .App-header {}
 
-    }
-    .windmill-vector{
-      max-width: 50px;
-      left: 39px;
-    }
-    .windmill-spin{
-      max-width: 125px;
-      bottom: 30px;
-    }
+  .windmill-vector {
+    max-width: 50px;
+    left: 39px;
   }
+
+  .windmill-spin {
+    max-width: 125px;
+    bottom: 30px;
+  }
+}
