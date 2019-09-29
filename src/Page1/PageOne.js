@@ -29,13 +29,17 @@ class Page1 extends Component {
           class: "amir-description"
         }
       ],
-      onTyping: 0
+      onTyping: 0,
+      onTypingMode: this.props.onTypingMode
     };
   }
 
   shouldComponentUpdate(nextProps, nextState) {
 
     if (this.state.onTyping !== nextState.onTyping) {
+      return true;
+    }
+    if (this.porps.onTypingMode !== nextProps.onTypingMode) {
       return true;
     }
     return false;
@@ -58,15 +62,17 @@ class Page1 extends Component {
         <div className="opening-text">
           <div className="textBlock">
             {
-              this.state.texts.map((textblock, index) =>
-                <AnimatedTyping
-                  className={textblock.class}
-                  text={textblock.text}
-                  speed={100}
-                  startTyping={this.state.onTyping === index}
-                  doneTyping={() => this.onDoneParagraphTyping()}
-                />
-              )
+              (this.state.texts.map((textblock, index) =>
+                this.props.onTypingMode
+                  ? <AnimatedTyping
+                    className={textblock.class}
+                    text={textblock.text}
+                    speed={100}
+                    startTyping={this.state.onTyping === index}
+                    doneTyping={() => this.onDoneParagraphTyping()}
+                  />
+                  : <div className={textblock.class}>{textblock.text}</div>
+              ))
             }
           </div>
         </div>
