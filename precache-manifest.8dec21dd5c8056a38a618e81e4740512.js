@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6c781b81bed29c24fc0b3bede452425c",
+    "revision": "f7478d932f56f985fc553f2738b61870",
     "url": "/Amir-CV/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Amir-CV/static/css/2.a0c0b610.chunk.css"
   },
   {
-    "revision": "64d07a53fff67b793b4a",
-    "url": "/Amir-CV/static/css/main.f3560b5d.chunk.css"
+    "revision": "4811dde942c00e832f57",
+    "url": "/Amir-CV/static/css/main.abc72c35.chunk.css"
   },
   {
     "revision": "1d3d0d6532132f7c7eb2",
     "url": "/Amir-CV/static/js/2.7c0b7d28.chunk.js"
   },
   {
-    "revision": "64d07a53fff67b793b4a",
-    "url": "/Amir-CV/static/js/main.a57bc8b1.chunk.js"
+    "revision": "4811dde942c00e832f57",
+    "url": "/Amir-CV/static/js/main.02a16adc.chunk.js"
   },
   {
     "revision": "e41254600f104dccfce0",
