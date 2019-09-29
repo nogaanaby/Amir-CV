@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Amir-CV/static/css/main.f3560b5d.chunk.css",
+    "main.js": "/Amir-CV/static/js/main.a57bc8b1.chunk.js",
+    "main.js.map": "/Amir-CV/static/js/main.a57bc8b1.chunk.js.map",
+    "runtime-main.js": "/Amir-CV/static/js/runtime-main.abe89ec4.js",
+    "runtime-main.js.map": "/Amir-CV/static/js/runtime-main.abe89ec4.js.map",
+    "static/css/2.a0c0b610.chunk.css": "/Amir-CV/static/css/2.a0c0b610.chunk.css",
+    "static/js/2.7c0b7d28.chunk.js": "/Amir-CV/static/js/2.7c0b7d28.chunk.js",
+    "static/js/2.7c0b7d28.chunk.js.map": "/Amir-CV/static/js/2.7c0b7d28.chunk.js.map",
+    "index.html": "/Amir-CV/index.html",
+    "precache-manifest.7a9ad60f0edabbee6c6a354a6aaa156d.js": "/Amir-CV/precache-manifest.7a9ad60f0edabbee6c6a354a6aaa156d.js",
+    "service-worker.js": "/Amir-CV/service-worker.js",
+    "static/css/2.a0c0b610.chunk.css.map": "/Amir-CV/static/css/2.a0c0b610.chunk.css.map",
+    "static/css/main.f3560b5d.chunk.css.map": "/Amir-CV/static/css/main.f3560b5d.chunk.css.map",
+    "static/media/all.css": "/Amir-CV/static/media/fa-solid-900.c2801fb4.svg",
+    "static/media/windmill-spiner.png": "/Amir-CV/static/media/windmill-spiner.b914d7ab.png",
+    "static/media/windmill.png": "/Amir-CV/static/media/windmill.7a331bd0.png"
+  }
+}
